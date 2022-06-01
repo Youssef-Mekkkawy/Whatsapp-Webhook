@@ -25,7 +25,7 @@ from flask import Flask, request
 >   
 >   1. Access_Token=Your Access Token.
 >   
->   2. Secret_key = Your Secret Key Can be Any Thing But You Try Choose Strong Password Example:- rup87-cn6s-kl9a-0scz-qey6ozbxmb.
+>   2. Secret_key =Your Secret Key Can be Any Thing But. Try Choose Strong Password Example:- rup87-cn6s-kl9a-0scz-qey6ozbxmb.
 >      
 >      
 >      

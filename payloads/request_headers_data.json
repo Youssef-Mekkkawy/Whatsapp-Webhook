@@ -1,0 +1,23 @@
+{
+
+    "Headers":{
+        "Content-Type": "application/json",
+        "Authorization": "Bearer EAAKJEpU9UrwBANkbehHSiIZCm9jHkecGZAVRJvB4zuXazdYk9rQHfZBzkbZBCaiVZCcfoP0Y8E9S5DKXlNqzFpnZCUO8Syv2HZCH8mpoUJhRDk3yKGgZAMkzjdqbZBxJEayTfk04n1zsbQHRiAjQjxPc79amCGNgATVRvZCfOy3tt3UIHpG5up5NT2"
+    },
+    
+
+    "DATA": {
+
+        "messaging_product": "whatsapp", 
+        "to": "TO_PHONE_NUMBER", 
+        "type": "template", 
+        "template": { 
+           "name": "hello_world", 
+           "language": 
+           { "code": "en_US" 
+           } 
+        }
+
+    }
+ 
+}

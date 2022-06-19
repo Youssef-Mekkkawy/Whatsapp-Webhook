@@ -1,6 +1,7 @@
 import os
 import json
 import requests
+from flask_ngrok import run_with_ngrok
 from dotenv import load_dotenv
 from flask import Flask, request
 
@@ -69,6 +70,12 @@ def Make_as_Read(phone_number_id, ID):
 
 # Flask Start
 app = Flask(__name__)
+def Ngrok():
+    # Ngrok build In
+    # Need To Download ngrok from Website -> https://ngrok.com
+    # Don't Forget To Auth Your Token by using Command.
+    # ngrok config add-authtoken {Your Token}
+    run_with_ngrok(app)
 app.config["SECRET_KEY"] = VERIFY_TOKEN
 
 
@@ -139,9 +146,21 @@ def index():
 
 # Flask End  
 if __name__ == '__main__':
-
+    # Ngrok build In
+    # Need To Download ngrok from Website -> https://ngrok.com
+    # Don't Forget To Auth Your Token by using Command.
+    # ngrok config add-authtoken {Your Token}
+    
+    # True -> Enable. | False -> Not Enable.
+    Enable_Ngrok = True
+    
+    
+    if Enable_Ngrok == True:
+        Ngrok()
+         
     try:
-        app.run(host = 'localhost', port = '5000', debug = True) 
+
+        app.run() 
 
     except Exception as e:
         print(f"Error is {e}")
